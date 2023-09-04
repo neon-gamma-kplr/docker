@@ -1,0 +1,27 @@
+1. Télécharger l'image Docker de PostgreSQL a partir du Docker-Hub :
+
+docker pull postgres
+
+2. Vérifier les images Docker installées :
+
+docker images
+
+3. Créer et exécuter le conteneur Docker de l'image PostgreSQL :
+
+docker run --name postgres_cont -e POSTGRES_PASSWORD=password -d -p 5432:5432 postgres
+
+4. Afficher les conteneurs en cours :
+
+docker ps
+
+5. Exécuter une session interactive de shell :
+
+docker exec -it 86ef408e533b bash
+
+6. Connecter a postgres :
+
+psql -U postgres
+
+11. Arreter le conteneur de l'image postgres :
+
+docker stop 86ef408e533b

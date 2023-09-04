@@ -1,0 +1,43 @@
+1. Afficher la version de Docker installée :
+
+docker --version
+
+2. Afficher la liste des conteneurs en cours d'exécution :
+
+docker ps
+
+3. Afficher la liste des images Docker disponibles sur votre machine :
+
+docker image ls
+
+4. Télécharger l'image "hello-world" depuis le Docker Hub :
+
+docker pull hello-world
+
+5. Vérifiez à nouveau les images Docker disponibles :
+
+docker image ls
+
+6. Créer un conteneur Docker pour utiliser l'image hello-world :
+
+docker run hello-world
+
+7. Vérifier la list des conteneurs :
+
+docker ps -a
+
+8. Supprimer le conteneur de l'image hello-world :
+
+docker rm 6ea9f89d6385
+
+9. Vérifier la list des conteneurs :
+
+docker ps -a
+
+10. Supprimer l'image "hello-world" de votre machine :
+
+docker rmi 9c7a54a9a43c (ou docker rmi hello-world)
+
+11. Vérifiez à nouveau les images Docker disponibles :
+
+docker image ls (ou docker images)
